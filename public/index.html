@@ -51,8 +51,9 @@
   </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
-      <div class="main">
+    <main class="main">
+      <div class="container">
+        <!-- create new tweet at top of page -->
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <form action="/tweets" method="POST">
@@ -67,14 +68,47 @@
             </div>
           </form>
         </section>
+        <section class="tweet">
+          <div class="oppositeSides tweetTop">
+            <div class="tweetNameIcon">
+              <img src="https://i.imgur.com/nlhLi3I.png" alt="user">
+              <p> &nbspAdam Harvey</p>
+            </div>
+            <p> @AdamHarvey</p>
+          </div>
+          <p class="tweetContent">
+            testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+          </p>
+          <div class="oppositeSides borderTop tweetBottom">
+            <p>10 days ago</p>
+            <div class="tweetInteractsGroup">
+              <i class="fa-solid fa-flag tweetInteract"></i>
+              <i class="fa-solid fa-retweet tweetInteract"></i>
+              <i class="fa-solid fa-heart tweetInteract"></i>
+            </div>
+          </div>
+        </section>
+        <section class="tweet">
+          <div class="oppositeSides tweetTop">
+            <div class="tweetNameIcon">
+              <img src="https://i.gyazo.com/0b767c3011b9eef97abbcffd4229bd7d.png" alt="user">
+              <p> &nbspHodor</p>
+            </div>
+            <p> @HodorHodor</p>
+          </div>
+          <p class="tweetContent">
+            Hodor! Hodor hodor. Hodor... Hodor hodor. Hodor hodor. Hodor... Hodor hodor. Hodor, hodor, hodor hodor. HODOR HODOR! Hodor, hodor. Hodor. Hodor.
+          </p>
+          <div class="oppositeSides borderTop tweetBottom">
+            <p>10 days ago</p>
+            <div class="tweetInteractsGroup">
+              <i class="fa-solid fa-flag tweetInteract"></i>
+              <i class="fa-solid fa-retweet tweetInteract"></i>
+              <i class="fa-solid fa-heart tweetInteract"></i>
+            </div>
+          </div>
+        </section>
       </div>
-
-
-
-
-
-
-
     </main>
   </body>
 </html>

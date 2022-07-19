@@ -94,17 +94,64 @@ img.resize {
 
 }
 
-.container {
+.main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main {
+
+.tweet {
+  border: solid;
+  margin-top: 2em;
+
+}
+.tweet:hover {
+  box-shadow: 6px 6px 0px rgb(0 0 110 / 20%);
+}
+
+.tweetInteractsGroup {
+  display: flex;
+  gap: 10px;
+  margin: 1em;
+}
+.tweetInteract {
+  display: flex;
+  color:#4056A1;
+}
+.tweetInteract:hover {
+  display: flex;
+  color:goldenrod;
+}
+
+.tweetNameIcon {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweetContent {
+  margin: 1em;
+}
+
+.tweetTop {
+  margin: 1em;
+  margin-top: 0.5em;
+}
+
+.tweetBottom {
+  border-top: solid;
+  margin: 1em;
+  font-size: medium;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   width: 90%;
+  word-break: break-all;
   background-color: #f4ecec;
 }
 
