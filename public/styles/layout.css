@@ -72,7 +72,7 @@ img.resize {
   justify-content: flex-end;
   align-items: center;
   font-weight: normal;
-  height: 400px;
+  height: 450px;
   color: #f4ecec;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
@@ -101,9 +101,14 @@ img.resize {
   justify-content: center;
 }
 
+#tweets {
+  width: 100%;
+}
+
 .tweet {
   border: solid;
   margin-top: 2em;
+  width: 100%
 
 }
 .tweet:hover {
