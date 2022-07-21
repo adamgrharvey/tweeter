@@ -1,3 +1,7 @@
+/*
+CSS Style for the Nav bar along the top
+*/
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -9,9 +13,17 @@
 }
 
 /* desktop */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
   .nav {
     background-color: #4056A1;
+  }
+
+}
+/* hide the write a tweet button if screen isnt wide*/
+@media only screen and (max-width: 680px) {
+
+  #writeNewTwtBtn {
+    display: none;
   }
 }
 .icon {

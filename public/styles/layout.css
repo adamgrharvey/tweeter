@@ -3,6 +3,9 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+ /*
+CSS Style for the overall main page.
+*/
 html {
   box-sizing: border-box;
 }
@@ -20,7 +23,7 @@ body {
   background-color: #f4ecec;
   font-size: 24px;
 }
-
+/* for profile pic*/
 img.resize {
   width: 200px;
   height: 200px;
@@ -119,7 +122,3 @@ img.resize {
 .parent {
   display: flex;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

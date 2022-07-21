@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
 
-
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -48,6 +47,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="main">
+      <!-- our profile -->
       <header class="profile">
         <div>
           <div>
@@ -59,12 +59,13 @@
         </div>
       </header>
       <div class="container">
+        <!-- error message hidden at start, slides down when error happens-->
         <div id="panel">
           <i class="fa-solid fa-circle-exclamation"></i>
           <span id="errorMsg"></span>
           <i class="fa-solid fa-circle-exclamation"></i>
         </div>
-        <!-- create new tweet at top of page -->
+        <!-- draft new tweet at top of page -->
         <section class="new-tweet">
           <form id="tweet-form" action="/tweets" method="POST">
             <textarea
@@ -78,10 +79,8 @@
             </div>
           </form>
         </section>
-
-        <!-- where the tweets will live-->
+        <!-- where the tweets will be appended.-->
         <div id="tweets">
-
         </div>
       </div>
     </main>
