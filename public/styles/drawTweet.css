@@ -1,0 +1,52 @@
+#tweets {
+  width: 100%;
+}
+.tweet {
+  border: solid;
+  margin-top: 2em;
+  width: 100%
+
+}
+.tweet:hover {
+  box-shadow: 6px 6px 0px rgb(0 0 110 / 20%);
+}
+.tweetInteractsGroup {
+  display: flex;
+  gap: 10px;
+  margin: 1em;
+}
+.tweetInteract {
+  display: flex;
+  color:#4056A1;
+}
+.tweetInteract:hover {
+  display: flex;
+  color:goldenrod;
+}
+
+.tweetNameIcon {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweetContent {
+  margin: 1em;
+}
+
+.tweetTop {
+  margin: 1em;
+  margin-top: 0.5em;
+}
+
+.tweetBottom {
+  border-top: solid;
+  margin: 1em;
+  font-size: medium;
+}
+
+@media only screen and (min-width: 1024px) {
+  #tweets {
+    margin-top: 34px;
+  }
+}

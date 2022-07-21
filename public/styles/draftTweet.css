@@ -1,0 +1,44 @@
+.new-tweet {
+  width: 100%;
+}
+#tweet-form {
+  margin-top: 80px;
+  padding-bottom: 30px;
+}
+.errorIcon {
+  display: flex;
+  color: red;
+  justify-content: center;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #f4ecec;
+  border: solid 3px red;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: red;
+}
+#panel {
+  padding: 50px;
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.counter {
+  font-family: 'Bungee', cursive;
+  font-weight: bold;
+  color: #545149;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  #tweet-form {
+    padding-bottom: 0px;
+  }
+}

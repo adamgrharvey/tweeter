@@ -4,11 +4,11 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-function topFunction() {
+
+const topFunction = function() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 
 const loadTweets = function() {
   $.get('/tweets', (body) => {
@@ -85,6 +85,7 @@ $(() => {
 
   $('#writeNewTwtBtn').on('click', (evt) => {
     $("#tweet-form").slideToggle("slow");
+    $("#tweet-text").focus();
     topFunction();
   })
 });

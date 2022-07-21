@@ -21,18 +21,6 @@ body {
   font-size: 24px;
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  color: red;
-}
-
-.errorIcon {
-  display: flex;
-  color: red;
-  justify-content: center;
-}
-
 .button {
   background-color: #4056A1;
   color: #f4ecec;
@@ -41,25 +29,9 @@ body {
   padding: 6px 14px;
 }
 
-.new-tweet {
-  width: 100%;
-}
-
-.counter {
-  font-family: 'Bungee', cursive;
-  font-weight: bold;
-  color: #545149;
-}
-
 img.resize {
   width: 200px;
   height: 200px;
-
-}
-
-#tweet-form {
-  margin-top: 80px;
-  padding-bottom: 30px;
 }
 
 .input {
@@ -77,28 +49,6 @@ img.resize {
   justify-content: space-between;
 }
 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #f4ecec;
-  border: solid 3px red;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%;
-  font-family: 'Source Sans Pro';
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  color: red;
-}
-#panel {
-  padding: 50px;
-  display: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-
 #scrollUpBtn {
   display: none;
   position: fixed;
@@ -115,6 +65,12 @@ img.resize {
   color: white;
   cursor: pointer;
   padding: 15px;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #scrollUpBtn:hover {
@@ -126,83 +82,25 @@ img.resize {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
   font-weight: normal;
-  height: 450px;
+  height: 400px;
   color: #f4ecec;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #4056A1;
-  position: fixed;
-  width: 100%;
-  height: 120px;
-  top: 0;
 }
 
 .name {
   font-weight: normal;
   margin-top: 20px;
   margin-bottom: 24px;
-
 }
 
 .main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#tweets {
-  width: 100%;
-}
-
-.tweet {
-  border: solid;
-  margin-top: 2em;
-  width: 100%
-
-}
-.tweet:hover {
-  box-shadow: 6px 6px 0px rgb(0 0 110 / 20%);
-}
-
-.tweetInteractsGroup {
-  display: flex;
-  gap: 10px;
-  margin: 1em;
-}
-.tweetInteract {
-  display: flex;
-  color:#4056A1;
-}
-.tweetInteract:hover {
-  display: flex;
-  color:goldenrod;
-}
-
-.tweetNameIcon {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tweetContent {
-  margin: 1em;
-}
-
-.tweetTop {
-  margin: 1em;
-  margin-top: 0.5em;
-}
-
-.tweetBottom {
-  border-top: solid;
-  margin: 1em;
-  font-size: medium;
 }
 
 .container {
@@ -214,6 +112,25 @@ img.resize {
   width: 90%;
   word-break: break-all;
   background-color: #f4ecec;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .profile {
+    bottom: 765px;
+    left: 120px;
+    height: 330px;
+    width: 27%;
+    position: fixed;
+  }
+  .container {
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 118px;
+  }
 }
 
 .parent {
