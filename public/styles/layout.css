@@ -27,6 +27,12 @@ body {
   color: red;
 }
 
+.errorIcon {
+  display: flex;
+  color: red;
+  justify-content: center;
+}
+
 .button {
   background-color: #4056A1;
   color: #f4ecec;
@@ -51,6 +57,11 @@ img.resize {
 
 }
 
+#tweet-form {
+  margin-top: 80px;
+  padding-bottom: 30px;
+}
+
 .input {
   outline: 0;
   border-width: 0 0 4px;
@@ -64,6 +75,50 @@ img.resize {
 .oppositeSides {
   display: flex;
   justify-content: space-between;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #f4ecec;
+  border: solid 3px red;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: red;
+}
+#panel {
+  padding: 50px;
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+#scrollUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  z-index: 99;
+  font-size: 40px;
+  height: 80px;
+  width: 80px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#scrollUpBtn:hover {
+  background-color: #555;
 }
 
 .profile {

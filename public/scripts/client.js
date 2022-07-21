@@ -4,6 +4,10 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
 const loadTweets = function() {
@@ -11,6 +15,12 @@ const loadTweets = function() {
     renderTweets(body);
   })
   
+};
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
 };
 
 
@@ -25,7 +35,7 @@ const createTweetElement = function(tweet) {
     <p> ${tweet.user.handle}</p>
   </div>
   <p class="tweetContent">
-    ${tweet.content.text}
+    ${escape(tweet.content.text)}
   </p>
   <div class="oppositeSides borderTop tweetBottom">
     <p>${timeago.format(tweet.created_at)}</p>
@@ -53,9 +63,15 @@ $(() => {
   $('#tweet-form').on('submit', (evt) => {
     evt.preventDefault();
     if (evt.target[0].value === '' || evt.target[0].value === null) {
-      alert("You can't send a blank tweet!");
+      $('#errorMsg').text("  Tweet is empty! Add some words or something.  ");
+      $("#panel").slideDown("slow", function() {
+        $("#panel").delay(4000).slideUp(500);
+      });
     } else if (evt.target[2].value < 0) {
-      alert("Too many characters in tweet!");
+      $('#errorMsg').text("  Too long. Please obey the arbitrary character limit.  ");
+      $("#panel").slideDown("slow", function() {
+        $("#panel").delay(4000).slideUp(500);
+      });
     } else {
       $.post('/tweets', ($('#tweet-form').serialize()), () => {
         evt.target[0].value = '';
@@ -63,15 +79,17 @@ $(() => {
         $.get('/tweets', (body) => {
           $( "#tweets" ).prepend(createTweetElement(body[body.length-1]));
         })
-
-
       });
-
     }
-    
+  })
 
+  $('#writeNewTwtBtn').on('click', (evt) => {
+    $("#tweet-form").slideToggle("slow");
+    topFunction();
   })
 });
+
+
 
 
 loadTweets();

@@ -25,15 +25,17 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js" defer></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js" defer></script>
+    <script type="text/javascript" src="/scripts/composer.js" defer></script>
   </head>
 
   <body>
+    <button id="scrollUpBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     <!-- Top nav bar (fixed) -->
     <nav class="nav" >
       
       <span style="font-family: 'Bungee', cursive; margin: 1.5em; color: #FFFFFF ;">tweeter</span>
 
-      <span style="color: #FFFFFF; margin: 1.5em;"; ><strong>Write</strong> a new tweet 
+      <span id='writeNewTwtBtn' style="color: #FFFFFF; margin: 1.5em;"; ><strong>Write</strong> a new tweet 
         <div class="icon"><i class="fa-solid fa-angles-down"></i></div>
       </span>
     </nav>
@@ -55,8 +57,13 @@
     <main class="main">
       <div class="container">
         <!-- create new tweet at top of page -->
+        <div id="panel">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span id="errorMsg"></span>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          
+        </div>
         <section class="new-tweet">
-          <h2>Compose Tweet</h2>
           <form id="tweet-form" action="/tweets" method="POST">
             <textarea
               class="input"
