@@ -7,7 +7,7 @@ $(document).ready(function() {
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};
 
-  function scrollFunction() {
+  const scrollFunction = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
      mybutton.style.display = "block";
     } else {
@@ -16,9 +16,8 @@ $(document).ready(function() {
   }
 
 // When the user clicks on the button, scroll to the top of the document
-const topFunction = function() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
+  const topFunction = function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 });

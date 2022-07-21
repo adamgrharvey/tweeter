@@ -1,9 +1,10 @@
 #tweets {
   width: 100%;
+  padding-bottom: 48px;
 }
 .tweet {
   border: solid;
-  margin-top: 2em;
+  margin-top: 2em;  
   width: 100%
 
 }

@@ -59,6 +59,12 @@
         </div>
       </header>
       <div class="container">
+        <div id="panel">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span id="errorMsg"></span>
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <!-- create new tweet at top of page -->
         <section class="new-tweet">
           <form id="tweet-form" action="/tweets" method="POST">
             <textarea
@@ -72,12 +78,6 @@
             </div>
           </form>
         </section>
-        <!-- create new tweet at top of page -->
-        <div id="panel">
-          <i class="fa-solid fa-circle-exclamation"></i>
-          <span id="errorMsg"></span>
-          <i class="fa-solid fa-circle-exclamation"></i>
-        </div>
 
         <!-- where the tweets will live-->
         <div id="tweets">

@@ -21,27 +21,9 @@ body {
   font-size: 24px;
 }
 
-.button {
-  background-color: #4056A1;
-  color: #f4ecec;
-  font-family: 'Bungee', cursive;
-  border: #4056A1;
-  padding: 6px 14px;
-}
-
 img.resize {
   width: 200px;
   height: 200px;
-}
-
-.input {
-  outline: 0;
-  border-width: 0 0 4px;
-  border-color: black;
-  resize: none;
-  width: 100%;
-  background-color: #f4ecec;
-  font-weight: bold;
 }
 
 .oppositeSides {
@@ -121,6 +103,7 @@ img.resize {
   }
   .profile {
     bottom: 765px;
+    top: 200px;
     left: 120px;
     height: 330px;
     width: 27%;

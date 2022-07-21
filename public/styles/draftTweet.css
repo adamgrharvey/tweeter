@@ -24,6 +24,17 @@
   margin-bottom: 30px;
   color: red;
 }
+
+.input {
+  outline: 0;
+  border-width: 0 0 4px;
+  border-color: black;
+  resize: none;
+  width: 100%;
+  background-color: #f4ecec;
+  font-weight: bold;
+}
+
 #panel {
   padding: 50px;
   display: none;
@@ -34,6 +45,18 @@
   font-family: 'Bungee', cursive;
   font-weight: bold;
   color: #545149;
+}
+
+.button {
+  background-color: #4056A1;
+  color: #f4ecec;
+  font-family: 'Bungee', cursive;
+  border: #4056A1;
+  padding: 6px 14px;
+}
+
+.button:hover {
+  background-color: #4879c4;
 }
 
 
