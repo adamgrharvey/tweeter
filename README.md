@@ -4,6 +4,11 @@ Tweeter is a simple, single-page Twitter clone that uses jQuery, HTML5 and CSS3 
 
 This has a working Twitter feed, which scales according to page size. A draft tweet button with a working character counter. Error messages for wrongful tweets. Profiles. Randomly generated tweet user data.
 
+!(https://github.com/adamgrharvey/tweeter/blob/master/IMAGES/206375cccd1c5c7b24e57621b80ffb6b.png?raw=true)
+!(https://github.com/adamgrharvey/tweeter/blob/master/IMAGES/801a24cd891b75ddb7c744227791ccab.png?raw=true)
+!(https://github.com/adamgrharvey/tweeter/blob/master/IMAGES/b77534dd3fd36e94ec9a7cbd526ab5d5.png?raw=true)
+!(https://github.com/adamgrharvey/tweeter/blob/master/IMAGES/d9f70ec3deddb80f93793c6912b7c152.png?raw=true)
+
 
 ## Getting Started
 
