@@ -24,3 +24,5 @@ This has a working Twitter feed, which scales according to page size. A draft tw
 
 - Express
 - Node 5.10.x or above
+- Body Parser
+- Chance
